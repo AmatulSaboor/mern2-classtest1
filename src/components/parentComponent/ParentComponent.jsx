@@ -1,10 +1,14 @@
 import ChildComponent from "../childComponent/ChildComponent";
+import Header from "../header/Header";
+import Sidebar from "../sidebar/Sidebar";
 let ParentComponent = ({RenderProp}) => {
     let message = 'I am from Parent component';
     return (
         <>
-            <ChildComponent message={message} />
-            <RenderProp count={5} />
+            <Header />
+            <Sidebar /> 
+            {RenderProp || <ChildComponent message={message} />}
+            {RenderProp && <RenderProp count={5} />}
         </>
     )
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 let Sidebar = () => {
     let menuItems = [
         {
@@ -23,10 +25,11 @@ let Sidebar = () => {
     ]
     return (
         <ul>
+        <span>This is sidebar</span>
             {menuItems.map((item, i) => {
                 return(
                     <li key={i}>
-                        {item.name}
+                        <Link to={item.link}>{item.name}</Link>
                     </li>
                 )
             })}
