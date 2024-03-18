@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "../header/Header";
+import Sidebar from "../sidebar/Sidebar";
 
 let Counter = () => {
     let [count, setCount] = useState(0);
@@ -10,6 +12,8 @@ let Counter = () => {
     }
     return (
         <>
+            <Header />
+            <Sidebar />
             <p>Count : {count}</p>
             <button onClick={handleIncrement}>Increment</button>
             <button onClick={handleDecrement}>Decrement</button>

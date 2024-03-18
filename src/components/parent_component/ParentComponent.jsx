@@ -1,4 +1,4 @@
-import ChildComponent from "../childComponent/ChildComponent";
+import ChildComponent from "../child_component/ChildComponent";
 import Header from "../header/Header";
 import Sidebar from "../sidebar/Sidebar";
 let ParentComponent = ({RenderProp}) => {

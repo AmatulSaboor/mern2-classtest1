@@ -20,7 +20,7 @@ let DataFetcher = () => {
                     <li key={i}>
                         {data.id}<br />
                         {data.title}<br />
-                        <input type="checkbox" checked={data.completed} /><br />
+                        <input type="checkbox" checked={data.completed} readOnly /><br />
                         <hr />
                     </li>
                 )
