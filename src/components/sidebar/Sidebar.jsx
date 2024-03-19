@@ -24,7 +24,7 @@ let Sidebar = () => {
         },
     ]
     return (
-        <ul>
+        <ul className="sidenav">
         <span>This is sidebar</span>
             {menuItems.map((item, i) => {
                 return(
